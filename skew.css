@@ -1,0 +1,161 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'open sans';
+}
+
+a{
+	text-decoration: none;
+}
+
+#top {
+	width: 80%;
+	height: 300px;
+	margin: 0 auto;
+}
+
+#barramenu{
+	width: 100%;
+	min-width: 1400px;
+	height: 100px;
+	position: relative;
+}
+
+#barramenu #backgroundmenu{
+	width: 100%;
+	height: 30px;
+	background: linear-gradient( to bottom, #fff -5px, #ccc 2px, #666 8px ,#000 28px );
+	position: absolute;
+	z-index: -1;
+}
+
+#barramenu #backgroundhex{
+	width: 100%;
+	height: 28px;
+	background:  url( image.png ) repeat-x;
+	box-shadow: inset 0 1px 25px #000 ;
+	border-top: solid 2px #000;
+	position: absolute;
+	top: 30px;
+	z-index: -1;
+}
+
+/*      ------------------------------------------------------------------ MAINMENU ------------------------------------------------------------ */
+
+#menu {
+	width: 75%;
+	margin: 0 auto;
+	height: 60px;
+}
+
+#menu  ul{
+	min-width: 1200px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	top: -10px;
+}
+
+#menu ul li{
+	float: left;
+	width: 200px;
+	height: 60px;
+	background: linear-gradient( to bottom, #CCC 0%, #4DAED5 10%, #87CCE7 49%, #238fb0 50%, #54B5D3 100% ) ;
+	box-shadow: 0 10px 10px #000;
+	transform: skew(-40deg);
+	-webkit-transform: skew(-40deg);
+	position: relative;
+}
+
+#menu ul li:hover {	background: linear-gradient( to bottom, #fff 0%, #d03e2e 10%, #e44736 49%, #ba4033 50%, #DB4533 100% ) ;}
+
+#menu ul li:hover a div .maintext{	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1)), to( #FF9E94 ))}
+
+#menu ul li:hover a div .blacktext{	   text-shadow: 1px 4px 6px #d03e2e , 0 0 0 #FFF, 1px 4px 6px #d03e2e }
+
+#menu ul li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+#menu ul li a:before {
+	content: "";
+	width: 2px;
+	height: 100%;
+	background: linear-gradient( to bottom, #fff, #54B5D3 );
+	display: block;
+	position: absolute;
+	left: 0;
+}
+
+#menu ul li a:after {
+	width: 50px;
+	height: 30px;
+	background: linear-gradient( 135deg, #f2f2f2, rgba( 255, 255, 255, 0)  70% ) ;
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#menu ul li a div{
+	transform: skew(40deg);
+	-webkit-transform: skew(40deg);
+	display: block;
+	margin-left: 70px;
+}
+
+#menu ul li a div span{	display: block;}
+
+
+#menu ul li a div .menuicon{
+	position: absolute;
+	top: 10px;
+	left: -50px;
+	font-size: 40px;
+	color: #fff;
+}
+
+#menu ul li a div .blacktext{
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 4px 6px #4DAED5 , 0 0 0 #FFF, 1px 4px 6px #4DAED5 ;
+	font-size: 14px;
+	font-family: 'Trebuchet MS' ;
+	font-weight: bold;
+}
+
+#menu ul li a div .maintext{
+	color: #000;
+	font-family: 'Verdana' ;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1)), to(rgba(117, 211, 237, 1)));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 21px;
+}
+
+#menu ul li a div .subtext{
+	margin-top: 3px;
+	font-family: 'verdana';
+	font-size: 10px;
+	color: #fff;
+}
+
+
+/*      ------------------------------------------------------------------ SUBMENU ------------------------------------------------------------ */
+
+#submenu {
+	width: 85%;
+	min-width: 1360px;
+	height: 32px;
+	margin: 0 auto;
+	z-index: 2;
+	background: linear-gradient( to bottom, #4d4d4d 1%, #000 70% ) ;
+	transform: skew(-40deg);
+	-webkit-transform: skew(-40deg);
+	position: relative;
+}
